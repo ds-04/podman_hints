@@ -17,3 +17,12 @@ podman system reset
 ``podman-compose logs``
 
 ``podman-compose up -d``
+
+
+<h1>Import env vars</h1>
+
+```export $(cat my_app/.env_db | xargs)```
+
+within that file
+
+```MYVAR='somevalue'```
